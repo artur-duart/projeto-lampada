@@ -1,6 +1,6 @@
 "use strict"
 
-function getId(elemento){
+function getId(elemento) {
     return document.getElementById(elemento)
 }
 
@@ -23,7 +23,6 @@ function ligarLampada() {
         lampada.src = 'img/ligada.jpg'
         botoesLigaDesliga(true, false)
     }
-
 }
 
 function desligarLampada() {
