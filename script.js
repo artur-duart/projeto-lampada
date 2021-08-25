@@ -43,6 +43,14 @@ function quebrarLampada() {
     botoesLigaDesliga(true, true)
 }
 
+function turnOnOff() {
+    console.log ("Teste Cor")
+}
+
+function piscarLampada() {
+    setInterval(turnOnOff, 1000)
+}
+
 //Eventos
 getId("ligar")
     .addEventListener("click", ligarLampada)
@@ -58,3 +66,6 @@ getId("lampada")
 
 getId("lampada")
     .addEventListener("dblclick", quebrarLampada)
+
+getId("piscar")
+    .addEventListener("click", piscarLampada)
