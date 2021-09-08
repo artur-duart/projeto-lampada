@@ -9,6 +9,7 @@ const getId = (elemento) => document.getElementById(elemento)
 const lampada = getId("lampada")
 let idLigar
 let idDesligar
+const botaoPiscar = getId("piscar")
 
 const botoesLigaDesliga = (estadoLigado, estadoDesligado, estadoPiscar) => {
     const ligar = getId("ligar")
@@ -41,6 +42,8 @@ const desligarLampada = () => {
 const quebrarLampada = () => {
     lampada.src = "img/quebrada.jpg"
     botoesLigaDesliga(true, true, true)
+    botaoPiscar.classList.remove("green")
+    botaoPiscar.classList.remove("red")
 }
 
 const pararPiscar = () => {
@@ -49,15 +52,18 @@ const pararPiscar = () => {
 }
 
 const piscarLampada = () => {
-    const botaoPiscar = getId("piscar")
 
     if (botaoPiscar.textContent == "Piscar") {
         idLigar = setInterval(ligarLampada, 500)
         idDesligar = setInterval(desligarLampada, 1000)
         botaoPiscar.textContent = "Parar"
+        botaoPiscar.classList.remove("green")
+        botaoPiscar.classList.add("red")
     } else {
         pararPiscar()
         botaoPiscar.textContent = "Piscar"
+        botaoPiscar.classList.remove("red")
+        botaoPiscar.classList.add("green")
     }
 }
 

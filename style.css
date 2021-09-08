@@ -70,3 +70,17 @@ button:hover {
     background-color: black;
     color: white;
 }
+
+.green {
+    background-color: green;
+    color: white;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.quebrada {
+    background-color: transparent;
+}
