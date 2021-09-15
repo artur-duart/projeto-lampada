@@ -11,7 +11,7 @@ O projeto consiste em criar uma lâmpada que tenha três ações:
 Todo o código foi construido seguindo as boa praticas, como responsabilidade única e funções puras. 
 <br/><br/>
 
-<!-- Imagem Atualizada -->
+<!-- Imagem do Layout Atualizada -->
 <div align="center">
     <img align="center" src="img/layout.png">
 </div>
