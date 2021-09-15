@@ -44,6 +44,7 @@ const quebrarLampada = () => {
     botoesLigaDesliga(true, true, true)
     botaoPiscar.classList.remove("green")
     botaoPiscar.classList.remove("red")
+    //Quando a lâmpada quebra, as classes são removidas e o fundo do botão passa a não ter cor
 }
 
 const pararPiscar = () => {
@@ -59,11 +60,13 @@ const piscarLampada = () => {
         botaoPiscar.textContent = "Parar"
         botaoPiscar.classList.remove("green")
         botaoPiscar.classList.add("red")
+        //Quando estiver escrito "Parar", o fundo do botão será vermelho
     } else {
         pararPiscar()
         botaoPiscar.textContent = "Piscar"
         botaoPiscar.classList.remove("red")
         botaoPiscar.classList.add("green")
+        //Quando estiver escrito "Piscar", o fundo do botão será verde
     }
 }
 
